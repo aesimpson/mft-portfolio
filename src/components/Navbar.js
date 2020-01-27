@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -12,83 +10,56 @@ const Navbar = class extends React.Component {
     }
   }
 
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
-  }
-
   render() {
-    return (
+    return ([
+      <div className="contact-bar py-2">
+        <div className="container">
+          <div className="row justify-content-end">
+            <span class="col-auto">
+              Call <a href="tel:+1-925-281-0676"> (925) 281-0676</a> or <a href="mailto:marinaoribello@gmail.com">email</a> to schedule a free consultation
+            </span>
+          </div>
+        </div>
+      </div>,
       <nav
-        className="navbar is-transparent"
+        className="navbar navbar-expand-lg"
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+          <div className="navbar-translate">
+            <Link className="navbar-brand" to="/">
+              <p className="logo-line-1">Marina Oribello</p>
+              <p className="logo-line-2">Marriage & Family Therapist</p>
             </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              role = "button"
+            <button
+              className="navbar-toggler"
+              data-toggle="collapse"
               tabIndex="0"
-              onClick={() => this.toggleHamburger()}
-              onKeyDown={() => this.toggleHamburger()}
+              data-target="#navMenu" 
+              aria-controls="navMenu" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation"
             >
-              <span />
-              <span />
-              <span />
-            </div>
+              <span className="navbar-toggler-icon"></span>
+            </button>
           </div>
           <div
             id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+            className="collapse navbar-collapse"
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item active">
+                <Link className="nav-link" to="/">Home</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">About</Link>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
-    )
+    ])
   }
 }
 

@@ -1,0 +1,103 @@
+$theme-colors: (
+  "primary": #a7504f,
+  "secondary": #e69e71
+);
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$primary: #a7504f;
+$secondary: #e69e71;
+$body-color: #2d2d2d;
+$light-grey: #ece3e0;
+$off-white: #f9eae2;
+
+@import "~bootstrap/scss/bootstrap";
+
+h1, h2, h3{
+  margin: 10px 0;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+p{
+  margin-bottom: 0.65rem;
+}
+
+span.divider {
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: $secondary;
+}
+
+.contact-bar{
+  background-color: $secondary;
+  font-size: 0.85rem;
+  color: #FFF;
+  a{
+    color: #FFF;
+    font-weight: 700;
+  }
+}
+
+.navbar-expand-lg{
+  justify-content: space-between;
+  font-weight: 400;
+  background-color: $off-white;
+}
+
+.navbar-brand{
+  p{
+    margin-bottom: 0;
+  }
+  .logo-line-1{
+    font-weight: 500;
+    color: $primary;
+  }
+  .logo-line-2{
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: rgba($primary, 0.65);
+  }
+  &:hover{
+    .logo-line-2{
+      color: $secondary;
+    }
+  }
+}
+
+.nav-item{
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  .nav-link{
+    color: $secondary;
+  }
+  &.active, &:hover{
+    .nav-link{
+      color: $primary;
+    }
+  }
+}
+
+.portrait{
+  .gatsby-image-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid $light-grey;
+  }
+}
+
+footer{
+  border-top: 4px solid $secondary;
+  padding: 1.65rem 0;
+  font-size: 0.88rem;
+  font-weight: 500;
+  p{
+    margin-bottom: 0.4rem;
+  }
+}
