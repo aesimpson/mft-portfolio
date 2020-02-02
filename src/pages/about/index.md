@@ -1,19 +1,18 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About our values
+title: About Marina
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+I am a Licensed Marriage and Family Therapist with a Masters degree in Counseling Psychology working with children, pre-teens, teens, and adults. My therapeutic approach is person-centered meaning I meet clients where they are and empower them to change or improve behavior. Through my authentic, positive energy and interactive approach, I provide clients with tools to help them live their best lives and build overall self-esteem and confidence. Also, as a Multiracial woman, I understand people through multiple perspectives as that has been my experience navigating the world. Based on my personal experience as well as my work with children and adolescents from various backgrounds, I have a unique understanding of race, mental health and community needs.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+My counseling experience includes working with clients from various settings and diverse populations such as a non-profit organization working with children and their families living in poverty and trauma providing mental health therapy services in their schools, a residential treatment facility, counseling center supporting adults who are mandated to receive therapy services to reintegrate them back into family life, medical offices providing support and care to patients living with chronic illnesses, therapeutic camps for children as well as therapeutic expressive art programs.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+## Education
+John F. Kennedy University, MA, Counseling Psychology with a Specialization in Children and Adolescents
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+Saint Mary’s College of California, BS, Psychology
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+John Cabot University, Study Abroad Program, Psychology, Rome, Italy
+
+## Credentials
+Licensed Marriage and Family Therapist MFC 112426, CA

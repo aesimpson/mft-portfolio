@@ -8,30 +8,53 @@ $secondary: #e69e71;
 $body-color: #2d2d2d;
 $light-grey: #ece3e0;
 $off-white: #f9eae2;
+$mobile-size: 992px;
+$small-screen-size: 768px;
 
 @import "~bootstrap/scss/bootstrap";
 
+@mixin mobile-breakpoint {
+  @media (max-width: $mobile-size) { @content; }
+}
+
+@mixin small-screen-breakpoint {
+  @media (max-width: $small-screen-size) { @content; }
+}
+
 h1, h2, h3{
-  margin: 10px 0;
+  margin: 1.2rem 0 0.8rem 0;
+}
+
+h1{
+  font-size: 2.2rem;
+  font-weight: 300;
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h3{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 
 p{
   margin-bottom: 0.65rem;
+  line-height: 1.75;
 }
 
 span.divider {
   font-weight: 300;
   font-size: 1.1rem;
   color: $secondary;
+}
+
+.col-text{
+  max-width: 700px;
+  h2{
+    text-transform: uppercase;
+  }
 }
 
 .contact-bar{
@@ -44,10 +67,14 @@ span.divider {
   }
 }
 
+.nav-wrap{
+  background-color: $off-white;
+}
+
 .navbar-expand-lg{
+  padding: 0.5rem 0;
   justify-content: space-between;
   font-weight: 400;
-  background-color: $off-white;
 }
 
 .navbar-brand{
@@ -76,19 +103,51 @@ span.divider {
   text-transform: uppercase;
   .nav-link{
     color: $secondary;
+    &.active{
+      color: $primary;
+    }
   }
-  &.active, &:hover{
+  &:hover{
     .nav-link{
       color: $primary;
     }
   }
 }
 
+.navbar-toggler{
+  color: $primary;
+  border-color: $primary;
+}
+
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(167,80,79, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*homepage specific styles*/
 .portrait{
   .gatsby-image-wrapper{
     width: 80%;
     margin: 0 auto;
     border: 1px solid $light-grey;
+  }
+}
+
+@include mobile-breakpoint{
+  .index-description{
+    flex-direction: column-reverse;
+  }
+  .portrait{
+    .gatsby-image-wrapper{
+      width: 60%;
+      margin: 0 auto 1.5rem auto;
+    }
+  }
+}
+
+@include  small-screen-breakpoint{
+  .portrait{
+    .gatsby-image-wrapper{
+      width: 80%;
+    }
   }
 }
 

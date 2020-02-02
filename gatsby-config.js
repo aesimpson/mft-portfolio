@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Marriage & Family Therapist, MA, LMFT',
+    title: 'Marina Oribello MFT',
     description:
-      '',
+      'Marina Oribello. Marriage & Family Therapist, MA, LMFT',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
