@@ -12,7 +12,7 @@ const Footer = class extends React.Component {
               </div>
               <div className="col-sm-12 col-lg-auto">
                 <p>Call or email to schedule your free consultation</p>
-                <p><a href="tel:+1-925-281-0676"> (925) 281-0676</a> <span className="divider">|</span> <a href="mailto:marinaoribello@gmail.com">marinaoribello@gmail.com</a></p>
+                <p><a href="tel:+1-925-212-1695"> (925) 212-1695</a> <span className="divider">|</span> <a href="mailto:marinaoribellomft@gmail.com">marinaoribellomft@gmail.com</a></p>
               </div>
           </div>
         </div>

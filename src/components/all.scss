@@ -1,13 +1,13 @@
 $theme-colors: (
-  "primary": #a7504f,
-  "secondary": #e69e71
+  "primary": #2f70ad,
+  "secondary": #d7e1ed
 );
 $font-family-sans-serif: 'Open Sans', sans-serif;
-$primary: #a7504f;
-$secondary: #e69e71;
+$primary: #2f70ad;
+$secondary: #dfe1dd;
 $body-color: #2d2d2d;
-$light-grey: #ece3e0;
-$off-white: #f9eae2;
+$light-grey: #d7e1ed;
+$off-white: #f0f2f6;
 $mobile-size: 992px;
 $small-screen-size: 768px;
 
@@ -58,17 +58,16 @@ span.divider {
 }
 
 .contact-bar{
-  background-color: $secondary;
+  background-color: $off-white;
   font-size: 0.85rem;
-  color: #FFF;
   a{
-    color: #FFF;
+    color: $primary;
     font-weight: 700;
   }
 }
 
 .nav-wrap{
-  background-color: $off-white;
+  background-color: $secondary;
 }
 
 .navbar-expand-lg{
@@ -88,11 +87,11 @@ span.divider {
   .logo-line-2{
     text-transform: uppercase;
     font-size: 0.85rem;
-    color: rgba($primary, 0.65);
+    color: rgba($body-color, 0.65);
   }
   &:hover{
     .logo-line-2{
-      color: $secondary;
+      color: rgba($primary, 0.65);
     }
   }
 }
@@ -102,14 +101,14 @@ span.divider {
   font-weight: 600;
   text-transform: uppercase;
   .nav-link{
-    color: $secondary;
+    color: rgba($body-color, 0.65);
     &.active{
       color: $primary;
     }
   }
   &:hover{
     .nav-link{
-      color: $primary;
+      color: rgba($primary, 0.65);
     }
   }
 }

@@ -36,7 +36,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="row justify-content-end">
             <span className="col-auto">
-              Call <a href="tel:+1-925-281-0676"> (925) 281-0676</a> or <a href="mailto:marinaoribello@gmail.com">email</a> to schedule a free consultation
+              Call <a href="tel:+1-925-212-1695"> (925) 212-1695</a> or <a href="mailto:marinaoribellomft@gmail.com">email</a> to schedule a free consultation
             </span>
           </div>
         </div>
